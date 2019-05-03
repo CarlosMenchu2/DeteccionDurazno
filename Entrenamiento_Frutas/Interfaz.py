@@ -11,8 +11,8 @@ import cv2
 nombre_imagen=""
 logitud,altura = 100,100
 #************************ Carga  del modelo y los pesos para la deteccion del estado de madurez del durazno*******************************
-modelo='C:/Users/carlo/Desktop/Entrenamiento_Frutas/Modelo/modelo_10.h5'#esta ruta deben modificarse por la direccion donde este el modelo_10.h5
-pesos= 'C:/Users/carlo/Desktop/Entrenamiento_Frutas/Modelo/pesos_10.h5' #esta ruta debe modificarse por la direccion donde esten los pesos_10.h5
+modelo='./Modelo/modelo_10.h5'#ruta del modelo (si no reconoce esta ruta de esta manera, cambiar la ruta a la absoluta)
+pesos= './Modelo/pesos_10.h5' #ruta pesos (si no reconoce esta ruta de esta manera, cambiar la ruta a la absoluta)
 cnn = tf.keras.models.load_model(modelo)
 cnn.load_weights(pesos)
 #**********************************************************************************************************************************************
@@ -22,8 +22,8 @@ def ver_durazno(imagen):
 
     logitud,altura = 100,100
     #*********************Carga del modelo de deteccion si la imagen es de un durazno o no************************************************************************
-    modelo='C:/Users/carlo/Desktop/Entrenamiento_Frutas/Modelo/modelo_Deteccion.h5'#esta ruta deben modificarse por la direccion donde este el modelo_Deteccion.h5
-    pesos= 'C:/Users/carlo/Desktop/Entrenamiento_Frutas/Modelo/pesos_Deteccion.h5' #esta ruta debe modificarse por la direccion donde esten los pesos_Deteccion.h5
+    modelo='./Modelo/modelo_Deteccion.h5'#ruta del modelo (si no reconoce esta ruta de esta manera, cambiar la ruta a la absoluta)
+    pesos= './Modelo/pesos_Deteccion.h5'  #ruta pesos (si no reconoce esta ruta de esta manera, cambiar la ruta a la absoluta)
     cnn = tf.keras.models.load_model(modelo)
     cnn.load_weights(pesos)
     #*************************************************************************************************************************************************************
