@@ -23,10 +23,12 @@ para funcionar
 
 Dentro de la carpeta Entremamiento_Frutas se encunetran los siguientes archivos:
 
-El archivo "Intefaz.py" es el archivo que contiene la aplicacion funcional
-El archivo "Clasificar.py" es el archivo usado para entrenar a la red que determina el estado de maduracion del Durazno
+El archivo "Intefaz.py" es el archivo que contiene la aplicacion funcional,
+El archivo "Clasificar.py" es el archivo usado para entrenar a la red que determina el estado de maduracion del Durazno,
 El achivo "DeteccionDurazno.py" es el archivo usado para entrenar a la red que determina si la imagen es un durazno o no
 
-Si desea probar la aoplicacion debe ejecutar el archivo "Interfaz.py"
+Si desea probar la aplicacion debe ejecutar el archivo "Interfaz.py"
+
+El link para ver las imagenes con las que fueron entrenados los modelos es: https://drive.google.com/open?id=1XbuBDCGPczddOm-q_YWxJUkO4KUPH7PT
 
 
